@@ -32,6 +32,7 @@ class RealMainViewController : UIViewController
     
     @IBOutlet weak var calculateLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var saveFolder: UIButton!
     
     // variable
     
@@ -43,6 +44,7 @@ class RealMainViewController : UIViewController
     var bannerID = ""
     var interstitialAdID = ""
     var operatorInput = false
+    var resulted = false
     
     override func viewDidLoad() {
         super.viewDidLoad()

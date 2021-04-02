@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 extension RealMainViewController{
     // 실행 메인 함수
@@ -33,16 +34,27 @@ extension RealMainViewController{
     
     // 계산 수식 추가 함수
     func addToCalculateAppend(_ val: String){
-        calculates = calculates + val
+        calculates += val
         calculateLabel.text = calculates
+        //keyPress()
     }
     
     // 숫자 클릭 시 실행 함수
     func numberBtnAction(_ btn: UIButton!, _ result: String){
         btn.addAction(for: .touchUpInside) { [self] btn in
+            if(resulted){
+                resulted = false
+                allClear()
+            }
             addToCalculateAppend(result)
             operatorInput = false
         }
+    }
+    
+    func keyPress(){
+        let url = Bundle.main.url(forResource: "ring", withExtension: "wav")
+        let sound = try! AVAudioPlayer(contentsOf: url!)
+        sound.play()
     }
     
     // 계산시, 소수점에 따라 소수점을 추가할 지 아닐 지를 판단하는 함수
@@ -52,6 +64,32 @@ extension RealMainViewController{
         }
         else{
             return String(format: "%.2f", result)
+        }
+    }
+    
+    func resultedCharacterClicked(){
+        if(resulted){
+            resulted = false
+            let tempCalculates = resultLabel.text?.replacingOccurrences(of: "=", with: "").trimmingCharacters(in: .whitespaces) ?? ""
+            allClear()
+            calculateLabel.text = tempCalculates
+            calculates = tempCalculates
+        }
+    }
+    
+    func realResult(){
+        let checkedPercent = calculates.replacingOccurrences(of: "%", with: "*0.01")
+        let expression = NSExpression(format: checkedPercent)
+        if let result = expression.expressionValue(with: nil, context: nil) as? Double{
+            let resultString = calculateResult(result)
+            resultLabel.text = "= " + resultString
+            resulted = true
+            operatorInput = false
+        }
+        else{
+            MyCustomClass.showAlert(viewController: self, title: "계산값을 초과했습니다.", msg: "계산할 수 있는 양을 초과했기 때문에, 지우고 다시 시작해주세요.", buttonTitle: "지우기") { btn in
+                self.allClear()
+            }
         }
     }
     
@@ -81,6 +119,7 @@ extension RealMainViewController{
         // 나누기 버튼
         divisionButton.addAction(for: .touchUpInside) { [self] btn in
             if(!operatorInput){
+                resultedCharacterClicked()
                 addToCalculateAppend("/")
                 operatorInput = true
             }
@@ -89,6 +128,7 @@ extension RealMainViewController{
         // 곱하기 버튼
         multiplyButton.addAction(for: .touchUpInside) { [self] btn in
             if(!operatorInput){
+                resultedCharacterClicked()
                 addToCalculateAppend("*")
                 operatorInput = true
             }
@@ -97,6 +137,7 @@ extension RealMainViewController{
         // 빼기 버튼
         subtractButton.addAction(for: .touchUpInside) { [self] btn in
             if(!operatorInput){
+                resultedCharacterClicked()
                 addToCalculateAppend("-")
                 operatorInput = true
             }
@@ -105,6 +146,7 @@ extension RealMainViewController{
         // 더하기 버튼
         plusButton.addAction(for: .touchUpInside) { [self] btn in
             if(!operatorInput){
+                resultedCharacterClicked()
                 addToCalculateAppend("+")
                 operatorInput = true
             }
@@ -123,23 +165,18 @@ extension RealMainViewController{
             if(calculateLabel.text!.count <= 0){
                 return
             }
-            
-            let checkedPercent = calculates.replacingOccurrences(of: "%", with: "*0.01")
-            let expression = NSExpression(format: checkedPercent)
-            var result = expression.expressionValue(with: nil, context: nil) as! Double
-            if(result > Double.greatestFiniteMagnitude){
-                result = Double.greatestFiniteMagnitude
-            }
-            let resultString = calculateResult(result)
-            resultLabel.text = "= " + resultString
+            //keyPress()
+            realResult()
         }
         
         // 괄호 버튼
         braketButton.addAction(for: .touchUpInside) { [self] btn in
-            if(!operatorInput){
-                addToCalculateAppend("%")
-                operatorInput = true
-            }
+            addToCalculateAppend("%")
+            realResult()
+        }
+        
+        saveFolder.addAction(for: .touchUpInside) { [self] btn in
+            
         }
     }
 }
