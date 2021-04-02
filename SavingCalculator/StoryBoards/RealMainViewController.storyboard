@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,219 +21,270 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nm1-di-xvi">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="80j-1Q-hm4">
                                 <rect key="frame" x="0.0" y="276" width="390" height="514"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDr-4g-VVI">
-                                        <rect key="frame" x="0.0" y="103" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="7">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oq8-2M-UUq">
-                                        <rect key="frame" x="98" y="103" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="8">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kc9-Cs-EGV">
-                                        <rect key="frame" x="295" y="103" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="X">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFo-Dj-KDe">
-                                        <rect key="frame" x="0.0" y="205" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="4">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KG9-mO-gkp">
-                                        <rect key="frame" x="98" y="205" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="5">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UV-28-k0g">
-                                        <rect key="frame" x="197" y="205" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="6">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOI-Zg-yTq">
-                                        <rect key="frame" x="295" y="205" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="-">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDZ-vd-UB9">
-                                        <rect key="frame" x="0.0" y="308" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="1">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeW-RX-bwh">
-                                        <rect key="frame" x="98" y="308" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="2">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic2-Qa-ibJ">
-                                        <rect key="frame" x="295" y="308" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebt-jw-LDt">
-                                        <rect key="frame" x="0.0" y="411" width="193" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="0">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bR9-v4-BRd">
-                                        <rect key="frame" x="197" y="411" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title=".">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6p-Vw-QXm">
-                                        <rect key="frame" x="295" y="411" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="=">
-                                            <color key="titleColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgO-gz-bBH">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="42"/>
-                                        <state key="normal" title="C">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYM-9j-VSk">
-                                        <rect key="frame" x="197" y="0.0" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="33"/>
-                                        <state key="normal" title="( )">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCC-Qh-F6t">
-                                        <rect key="frame" x="295" y="0.0" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="÷">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTe-w3-IKi">
-                                        <rect key="frame" x="197" y="103" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="9">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfW-vO-wlE">
-                                        <rect key="frame" x="98" y="1" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="40"/>
-                                        <state key="normal" title="&lt;-">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s54-BB-uCG">
-                                        <rect key="frame" x="197" y="308" width="95" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
-                                        <state key="normal" title="3">
-                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Nnl-ES-OnP">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="99.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgO-gz-bBH">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="100"/>
+                                                <color key="backgroundColor" red="0.21974486109999999" green="0.11086864019999999" blue="0.34298950430000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="42"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" red="0.99371200800000004" green="0.96315580609999996" blue="0.41291552780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfW-vO-wlE">
+                                                <rect key="frame" x="98" y="0.0" width="96" height="100"/>
+                                                <color key="backgroundColor" red="0.21974486109999999" green="0.11086864019999999" blue="0.34298950430000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                                <state key="normal" title="⌫">
+                                                    <color key="titleColor" red="0.99371200800000004" green="0.96315580609999996" blue="0.41291552780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYM-9j-VSk">
+                                                <rect key="frame" x="197" y="0.0" width="95" height="100"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="33"/>
+                                                <state key="normal" title="%">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCC-Qh-F6t">
+                                                <rect key="frame" x="295" y="0.0" width="95" height="100"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="÷">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Vlq-6f-C0H">
+                                        <rect key="frame" x="0.0" y="103.66666666666669" width="390" height="99.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDr-4g-VVI">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="99"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oq8-2M-UUq">
+                                                <rect key="frame" x="98" y="0.0" width="96" height="99"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTe-w3-IKi">
+                                                <rect key="frame" x="197" y="0.0" width="95" height="99"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kc9-Cs-EGV">
+                                                <rect key="frame" x="295" y="0.0" width="95" height="99"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="X">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1Lk-qy-nLQ">
+                                        <rect key="frame" x="0.0" y="207.33333333333334" width="390" height="99.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFo-Dj-KDe">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="100"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KG9-mO-gkp">
+                                                <rect key="frame" x="98" y="0.0" width="96" height="100"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UV-28-k0g">
+                                                <rect key="frame" x="197" y="0.0" width="95" height="100"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOI-Zg-yTq">
+                                                <rect key="frame" x="295" y="0.0" width="95" height="100"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="SeA-vx-OaJ">
+                                        <rect key="frame" x="0.0" y="310.66666666666663" width="390" height="99.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s54-BB-uCG">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="99"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeW-RX-bwh">
+                                                <rect key="frame" x="98" y="0.0" width="96" height="99"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDZ-vd-UB9">
+                                                <rect key="frame" x="197" y="0.0" width="95" height="99"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic2-Qa-ibJ">
+                                                <rect key="frame" x="295" y="0.0" width="95" height="99"/>
+                                                <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="mui-pB-arm">
+                                        <rect key="frame" x="0.0" y="414.33333333333337" width="390" height="99.666666666666629"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6bT-iQ-DVE">
+                                                <rect key="frame" x="0.0" y="0.0" width="193.66666666666666" height="99.666666666666671"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebt-jw-LDt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="194" height="100"/>
+                                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="okF-PG-CNf">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="193.33333333333337" height="99.666666666666671"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bR9-v4-BRd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="95" height="100"/>
+                                                        <color key="backgroundColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6p-Vw-QXm">
+                                                        <rect key="frame" x="98" y="0.0" width="95" height="100"/>
+                                                        <color key="backgroundColor" red="0.93846970799999996" green="0.82369989160000001" blue="0.36872920390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="44"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" red="0.049537636340000003" green="0.090742610390000006" blue="0.2927091718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1568667591" green="0.1566421986" blue="0.16783922909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="SeA-vx-OaJ" firstAttribute="leading" secondItem="80j-1Q-hm4" secondAttribute="leading" id="0m5-Eo-KOt"/>
+                                    <constraint firstItem="Nnl-ES-OnP" firstAttribute="top" secondItem="80j-1Q-hm4" secondAttribute="top" id="7bb-mf-SXz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vlq-6f-C0H" secondAttribute="trailing" id="7iZ-kp-yTG"/>
+                                    <constraint firstItem="mui-pB-arm" firstAttribute="leading" secondItem="80j-1Q-hm4" secondAttribute="leading" id="BMj-jE-TBi"/>
+                                    <constraint firstAttribute="bottom" secondItem="mui-pB-arm" secondAttribute="bottom" id="BeM-K7-33f"/>
+                                    <constraint firstAttribute="trailing" secondItem="SeA-vx-OaJ" secondAttribute="trailing" id="Ivr-jm-Ywb"/>
+                                    <constraint firstItem="1Lk-qy-nLQ" firstAttribute="top" secondItem="Vlq-6f-C0H" secondAttribute="bottom" constant="3.9999999999999716" id="JoM-iU-BIu"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Lk-qy-nLQ" secondAttribute="trailing" id="KON-iN-cX0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nnl-ES-OnP" secondAttribute="trailing" id="LLs-fA-NIP"/>
+                                    <constraint firstItem="mui-pB-arm" firstAttribute="top" secondItem="SeA-vx-OaJ" secondAttribute="bottom" constant="4.0000000000000568" id="PoJ-MG-FK0"/>
+                                    <constraint firstItem="Nnl-ES-OnP" firstAttribute="leading" secondItem="80j-1Q-hm4" secondAttribute="leading" id="W15-sK-q7X"/>
+                                    <constraint firstItem="Vlq-6f-C0H" firstAttribute="top" secondItem="Nnl-ES-OnP" secondAttribute="bottom" constant="4.0000000000000142" id="W44-fU-1Ea"/>
+                                    <constraint firstItem="SeA-vx-OaJ" firstAttribute="top" secondItem="1Lk-qy-nLQ" secondAttribute="bottom" constant="3.9999999999999432" id="bYO-PK-Y3F"/>
+                                    <constraint firstItem="Vlq-6f-C0H" firstAttribute="leading" secondItem="80j-1Q-hm4" secondAttribute="leading" id="mCn-l7-8Ek"/>
+                                    <constraint firstAttribute="trailing" secondItem="mui-pB-arm" secondAttribute="trailing" id="mcd-7z-THZ"/>
+                                    <constraint firstItem="1Lk-qy-nLQ" firstAttribute="leading" secondItem="80j-1Q-hm4" secondAttribute="leading" id="pYc-li-66E"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56H-L7-h1c">
+                                <rect key="frame" x="0.0" y="44" width="390" height="180"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10-10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="GLD-P5-DY6">
+                                        <rect key="frame" x="8" y="0.0" width="374" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="45"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="= 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="DOp-hQ-rxt">
+                                        <rect key="frame" x="8" y="92" width="374" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="45"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Myc-IN-ZsU"/>
+                                </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="Nm8-g0-fa0">
-                                <rect key="frame" x="0.0" y="44" width="390" height="118"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTA-FM-h8q">
+                                <rect key="frame" x="316" y="229" width="58" height="39"/>
                                 <color key="backgroundColor" red="0.1568667591" green="0.1566421986" blue="0.16783922909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="28"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6T-57-4Ne">
-                                <rect key="frame" x="0.0" y="170" width="390" height="47"/>
-                                <color key="backgroundColor" red="0.1568667591" green="0.1566421986" blue="0.16783922909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="yspotlight-regular" family="Y Spotlight" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="tintColor" red="0.98353630299999995" green="0.82315570120000003" blue="0.34612783790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="folder.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iLo-Dd-F7J"/>
                         <color key="backgroundColor" red="0.1568667591" green="0.1566421986" blue="0.16783922909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Nm8-g0-fa0" firstAttribute="top" secondItem="iLo-Dd-F7J" secondAttribute="top" id="4KH-s5-PBi"/>
-                            <constraint firstAttribute="bottom" secondItem="Nm1-di-xvi" secondAttribute="bottom" constant="54" id="5QF-uT-Ech"/>
-                            <constraint firstItem="Nm1-di-xvi" firstAttribute="top" secondItem="iLo-Dd-F7J" secondAttribute="top" constant="232" id="8CW-Xd-oOb"/>
-                            <constraint firstItem="B6T-57-4Ne" firstAttribute="trailing" secondItem="iLo-Dd-F7J" secondAttribute="trailing" id="8yw-Px-nev"/>
-                            <constraint firstItem="Nm8-g0-fa0" firstAttribute="trailing" secondItem="iLo-Dd-F7J" secondAttribute="trailing" id="Cr0-dG-oav"/>
-                            <constraint firstItem="Nm1-di-xvi" firstAttribute="top" secondItem="B6T-57-4Ne" secondAttribute="bottom" constant="59" id="Hl3-YF-r5K"/>
-                            <constraint firstItem="Nm8-g0-fa0" firstAttribute="centerX" secondItem="0PT-YX-0Vp" secondAttribute="centerX" id="Ldx-c2-aLr"/>
-                            <constraint firstItem="B6T-57-4Ne" firstAttribute="top" secondItem="Nm8-g0-fa0" secondAttribute="bottom" constant="8" symbolic="YES" id="VIK-OS-2pn"/>
-                            <constraint firstItem="Nm8-g0-fa0" firstAttribute="leading" secondItem="iLo-Dd-F7J" secondAttribute="leading" id="VWf-RF-FyF"/>
-                            <constraint firstItem="Nm1-di-xvi" firstAttribute="trailing" secondItem="iLo-Dd-F7J" secondAttribute="trailing" id="ZlR-b6-HF9"/>
-                            <constraint firstItem="Nm1-di-xvi" firstAttribute="top" secondItem="Nm8-g0-fa0" secondAttribute="bottom" constant="114" id="eqb-Ge-HG5"/>
-                            <constraint firstItem="Nm1-di-xvi" firstAttribute="leading" secondItem="iLo-Dd-F7J" secondAttribute="leading" id="qxY-1W-7vo"/>
-                            <constraint firstItem="B6T-57-4Ne" firstAttribute="leading" secondItem="iLo-Dd-F7J" secondAttribute="leading" id="t2i-tg-vJM"/>
+                            <constraint firstItem="kTA-FM-h8q" firstAttribute="top" secondItem="56H-L7-h1c" secondAttribute="bottom" constant="5" id="1D5-Ra-j1b"/>
+                            <constraint firstItem="80j-1Q-hm4" firstAttribute="leading" secondItem="iLo-Dd-F7J" secondAttribute="leading" id="42o-Qn-kfT"/>
+                            <constraint firstItem="80j-1Q-hm4" firstAttribute="top" secondItem="iLo-Dd-F7J" secondAttribute="top" constant="232" id="4mW-15-aaH"/>
+                            <constraint firstItem="56H-L7-h1c" firstAttribute="trailing" secondItem="iLo-Dd-F7J" secondAttribute="trailing" id="9cP-fI-EFA"/>
+                            <constraint firstItem="56H-L7-h1c" firstAttribute="leading" secondItem="iLo-Dd-F7J" secondAttribute="leading" id="B22-vB-ctg"/>
+                            <constraint firstItem="iLo-Dd-F7J" firstAttribute="bottom" secondItem="80j-1Q-hm4" secondAttribute="bottom" constant="20" id="CMj-Dr-jai"/>
+                            <constraint firstItem="56H-L7-h1c" firstAttribute="top" secondItem="iLo-Dd-F7J" secondAttribute="top" id="FbF-Sp-PTD"/>
+                            <constraint firstItem="iLo-Dd-F7J" firstAttribute="trailing" secondItem="kTA-FM-h8q" secondAttribute="trailing" constant="16" id="Y0s-ha-Y4d"/>
+                            <constraint firstItem="56H-L7-h1c" firstAttribute="centerX" secondItem="0PT-YX-0Vp" secondAttribute="centerX" id="kcC-XH-h60"/>
+                            <constraint firstItem="80j-1Q-hm4" firstAttribute="trailing" secondItem="iLo-Dd-F7J" secondAttribute="trailing" id="kqN-8i-JVM"/>
+                            <constraint firstItem="80j-1Q-hm4" firstAttribute="top" secondItem="kTA-FM-h8q" secondAttribute="bottom" constant="8" symbolic="YES" id="wgp-yj-O2R"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="braketButton" destination="hYM-9j-VSk" id="OP0-bw-jXi"/>
-                        <outlet property="calculateTextView" destination="Nm8-g0-fa0" id="TwJ-70-ulB"/>
+                        <outlet property="calculateLabel" destination="GLD-P5-DY6" id="Xhv-pM-hHk"/>
                         <outlet property="clearButton" destination="SgO-gz-bBH" id="8oE-Rm-6G5"/>
                         <outlet property="deleteButton" destination="PfW-vO-wlE" id="BRO-qX-VWi"/>
                         <outlet property="divisionButton" destination="aCC-Qh-F6t" id="yQb-ls-LX8"/>
@@ -245,7 +297,7 @@
                         <outlet property="oneButton" destination="EDZ-vd-UB9" id="Cdv-6Q-Kg8"/>
                         <outlet property="plusButton" destination="Ic2-Qa-ibJ" id="anA-Y9-8wS"/>
                         <outlet property="resultButton" destination="N6p-Vw-QXm" id="4wZ-zl-Yxn"/>
-                        <outlet property="resultTextView" destination="B6T-57-4Ne" id="tPG-EL-NxY"/>
+                        <outlet property="resultLabel" destination="DOp-hQ-rxt" id="5MN-eE-Cyu"/>
                         <outlet property="sevenButton" destination="nDr-4g-VVI" id="Dtq-RX-mF5"/>
                         <outlet property="sixButton" destination="8UV-28-k0g" id="y47-mV-2H5"/>
                         <outlet property="subtractButton" destination="AOI-Zg-yTq" id="QHe-Ml-MRo"/>
@@ -259,4 +311,7 @@
             <point key="canvasLocation" x="269.23076923076923" y="190.521327014218"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="folder.fill" catalog="system" width="128" height="97"/>
+    </resources>
 </document>

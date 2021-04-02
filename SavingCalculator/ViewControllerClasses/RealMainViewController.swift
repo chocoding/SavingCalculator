@@ -30,20 +30,22 @@ class RealMainViewController : UIViewController
     @IBOutlet weak var braketButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
     
-    @IBOutlet weak var calculateTextView: UITextView!
-    @IBOutlet weak var resultTextView: UITextView!
+    @IBOutlet weak var calculateLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
     
+    // variable
     
     var calculationButtons: [UIButton] = [UIButton]()
     
-    // variable
+    var calculates = ""
     var interstitial: GADInterstitialAd?
     var bannerView: GADBannerView!
     var bannerID = ""
     var interstitialAdID = ""
+    var operatorInput = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        CalculateUIMain()
+        calculateUIMain()
     }
 }

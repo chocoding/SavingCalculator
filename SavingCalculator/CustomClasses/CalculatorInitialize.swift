@@ -11,7 +11,7 @@ import AdSupport
 
 extension RealMainViewController{
     
-    func Initialize(){
+    func initialize(){
         if ASIdentifierManager.shared().advertisingIdentifier == UUID(uuidString: "BCCF6C2C-ED1B-43F7-B90A-9220D75A19C0"){
             bannerID = "ca-app-pub-3940256099942544/2934735716"
             interstitialAdID = "ca-app-pub-3940256099942544/4411468910"
