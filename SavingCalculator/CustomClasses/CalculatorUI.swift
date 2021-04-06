@@ -7,6 +7,8 @@
 
 import UIKit
 import AVFoundation
+import SideMenu
+import CoreData
 
 extension RealMainViewController{
     // 실행 메인 함수
@@ -15,6 +17,7 @@ extension RealMainViewController{
         buttonsUIRadius()
         btnAction()
         allClear()
+        getAllItems()
     }
     
     // 계산기 버튼 둥글게 만들기 함수
@@ -30,6 +33,8 @@ extension RealMainViewController{
         calculates = ""
         calculateLabel.text = ""
         resultLabel.text = ""
+        resulted = false
+        operatorInput = false
     }
     
     // 계산 수식 추가 함수
@@ -85,12 +90,70 @@ extension RealMainViewController{
             resultLabel.text = "= " + resultString
             resulted = true
             operatorInput = false
+            createItem(cal: calculateLabel.text!, result: resultString)
         }
         else{
             MyCustomClass.showAlert(viewController: self, title: "계산값을 초과했습니다.", msg: "계산할 수 있는 양을 초과했기 때문에, 지우고 다시 시작해주세요.", buttonTitle: "지우기") { btn in
                 self.allClear()
             }
         }
+    }
+    
+    func getAllItems() {
+        do{
+            calculateModel = try context.fetch(Calculate.fetchRequest())
+            DispatchQueue.main.async {
+                self.sideMenu = SideMenuNavigationController(rootViewController:MenuController.init(with: self.calculateModel))
+                SideMenuManager.default.leftMenuNavigationController = self.sideMenu
+                SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+                self.menuController?.tableView.reloadData()
+            }
+        }
+        catch{
+            print(error)
+        }
+    }
+    
+    func createItem(cal: String, result: String){
+        let newItem = Calculate(context: context)
+        newItem.calculate = cal
+        newItem.resulted = result
+        newItem.saveDate = Date()
+        
+        do{
+            try context.save()
+            getAllItems()
+        }
+        catch{
+            print(error)
+        }
+    }
+    
+    @objc func deleteItem(_ notification : Notification){
+        
+        let item = notification.object as! Calculate
+        
+        context.delete(item)
+        
+        do{
+            try context.save()
+            sideMenu?.dismiss(animated: false, completion: { [self] in
+                getAllItems()
+                allClear()
+            })
+        }
+        catch{
+            print(error)
+        }
+    }
+    
+    @objc func getShow(_ notification : Notification){
+        let getValue = notification.object as! [String]
+        calculateLabel.text = getValue[0]
+        resultLabel.text = getValue[1]
+        resulted = true
+        operatorInput = false
+        sideMenu?.dismiss(animated: false, completion: nil)
     }
     
     // 버튼 클릭 시 액션 함수
@@ -110,6 +173,7 @@ extension RealMainViewController{
         
         // 하나하나 삭제 버튼
         deleteButton.addAction(for: .touchUpInside) { [self] btn in
+            resultedCharacterClicked()
             if(!calculates.isEmpty){
                 calculates.removeLast()
                 calculateLabel.text = calculates
@@ -171,12 +235,15 @@ extension RealMainViewController{
         
         // 괄호 버튼
         braketButton.addAction(for: .touchUpInside) { [self] btn in
-            addToCalculateAppend("%")
-            realResult()
+            if(!operatorInput){
+                resultedCharacterClicked()
+                addToCalculateAppend("%")
+                operatorInput = true
+            }
         }
         
         saveFolder.addAction(for: .touchUpInside) { [self] btn in
-            
+            present(sideMenu!, animated: true)
         }
     }
 }
